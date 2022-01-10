@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - surreyfyp/jx-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.3.10.77.173.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
