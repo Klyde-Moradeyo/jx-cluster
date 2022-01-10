@@ -200,6 +200,8 @@
     version: 0.27.2
 - namespace: jx-production
   path: helmfiles/jx-production/helmfile.yaml
+- namespace: jx-staging
+  path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
     appVersion: 0.0.2
@@ -211,4 +213,11 @@
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.3.10.77.173.nip.io
     resourcePath: config-root/namespaces/jx-production/election-web-app
+    firstDeployed: "2022-01-10T13:51:51Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    lastDeployed: "2022-01-10T13:51:51Z"
+    name: election-web-app
+    repositoryName: dev
+    repositoryUrl: http://chartmuseum-jx.3.10.77.173.nip.io
+    resourcePath: config-root/namespaces/jx-staging/election-web-app
     version: 0.0.2

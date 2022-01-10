@@ -1,0 +1,20 @@
+# Source: election-web-app/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: election-web-app
+  labels:
+    chart: "election-web-app-0.0.2"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'election-web-app'
+  namespace: jx-staging
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: election-web-app-election-web-app
