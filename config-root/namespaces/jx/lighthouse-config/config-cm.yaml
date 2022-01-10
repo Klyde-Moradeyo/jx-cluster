@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        surreyfyp/election-web-app: true
         surreyfyp/jx-cluster: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        surreyfyp/election-web-app: merge
         surreyfyp/jx-cluster: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - surreyfyp/jx-cluster
+        - surreyfyp/election-web-app
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - surreyfyp/jx-cluster
+        - surreyfyp/election-web-app
       target_url: http://lighthouse-jx.3.10.77.173.nip.io/merge/status
 kind: ConfigMap
 metadata:
