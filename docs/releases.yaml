@@ -115,6 +115,25 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-kh-check
     version: 0.0.78
+  - apiVersion: v2
+    appVersion: latest
+    dependencies:
+    - condition: postgresql.useInternalInstance
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.13
+    description: Continuous Delivery Indicators for Jenkins X
+    firstDeployed: "2022-02-16T19:35:00Z"
+    home: https://github.com/jenkins-x/cd-indicators
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2022-02-16T19:35:00Z"
+    name: cd-indicators
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/jx/cd-indicators
+    sources:
+    - https://github.com/jenkins-x/cd-indicators
+    version: 0.0.13
 - namespace: kuberhealthy
   path: helmfiles/kuberhealthy/helmfile.yaml
 - namespace: nginx
