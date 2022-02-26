@@ -30,11 +30,6 @@ spec:
           env:
             - name: VERSION
               value: 0.0.6
-          image: "847399026905.dkr.ecr.eu-west-2.amazonaws.com/surreyfyp/election-web-app:0.0.5"
-          imagePullPolicy: IfNotPresent
-          env:
-            - name: VERSION
-              value: 0.0.5
           envFrom: null
           ports:
             - name: http
