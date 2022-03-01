@@ -12,7 +12,7 @@ metadata:
   namespace: jx
 spec:
   source:
-    ref: "master"
+    ref: "main"
     url: https://github.com/surreyfyp/jx-cluster.git
   kind: Development
   label: Development
