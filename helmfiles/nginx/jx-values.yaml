@@ -20,28 +20,52 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: tf-jx-giving-boxer
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    project: "847399026905"
     provider: eks
+    region: eu-west-2
+    registry: 847399026905.dkr.ecr.eu-west-2.amazonaws.com
   environments:
   - key: dev
+    owner: surreyfyp
+    repository: jx-cluster
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 35.178.110.181.nip.io
     kind: ingress
     namespaceSubDomain: -nginx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jx-bot
   repository: nexus
   secretStorage: vault
-  vault: {}
+  storage:
+  - name: logs
+    url: s3://logs-tf-jx-giving-boxer-20220323182143025800000008
+  - name: reports
+    url: s3://reports-tf-jx-giving-boxer-20220323182143020200000007
+  - name: repository
+    url: s3://repository-tf-jx-giving-boxer-20220323182143019700000006
+  terraform: true
+  vault:
+    aws:
+      dynamoDBRegion: eu-west-2
+      dynamoDBTable: vault-unseal-tf-jx-giving-boxer-RHJH202o
+      kmsKeyId: 7ab79c69-9d65-4c83-8717-d82d01a431a5
+      kmsRegion: eu-west-2
+      s3Bucket: vault-unseal-tf-jx-giving-boxer-20220323182143019700000005
+      s3Region: eu-west-2
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
   enabled: false
