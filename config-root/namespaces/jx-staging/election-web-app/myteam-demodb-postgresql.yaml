@@ -12,7 +12,7 @@ spec:
   teamId: "myteam"
   volume:
     size: 1Gi
-  numberOfInstances: 1
+  numberOfInstances: 2
   users:
     myowner: # database owner
       - superuser
