@@ -79,5 +79,7 @@ releases:
   values:
   - ../../versionStream/charts/jxgh/health-checks-jx/values.yaml.gotmpl
   - jx-values.yaml
+- chart: jxgh/cd-indicators
+  name: cd-indicators
 templates: {}
 renderedvalues: {}
