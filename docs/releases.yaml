@@ -386,3 +386,17 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.27.2
+- namespace: jx-staging
+  path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.0.14
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2022-03-23T19:09:48Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    lastDeployed: "2022-03-23T19:09:48Z"
+    name: election-web-app
+    repositoryName: dev
+    repositoryUrl: http://chartmuseum-jx.35.178.110.181.nip.io
+    resourcePath: config-root/namespaces/jx-staging/election-web-app
+    version: 0.0.14
