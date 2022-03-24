@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.35.178.110.181.nip.io
+releases:
+- chart: dev/election-web-app
+  version: 0.0.16
+  name: election-web-app
+templates: {}
+renderedvalues: {}
