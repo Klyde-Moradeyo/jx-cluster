@@ -10,5 +10,6 @@ helmfiles:
 - path: helmfiles/tekton-pipelines/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
 - path: helmfiles/jx-staging/helmfile.yaml
+- path: helmfiles/jx-production/helmfile.yaml
 templates: {}
 renderedvalues: {}
