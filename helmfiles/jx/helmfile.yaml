@@ -85,5 +85,7 @@ releases:
   values:
   - ../../versionStream/charts/jxgh/cd-indicators/values.yaml
   - jx-values.yaml
+- chart: jxgh/lighthouse-webui-plugin
+  name: lighthouse-webui-plugin
 templates: {}
 renderedvalues: {}
