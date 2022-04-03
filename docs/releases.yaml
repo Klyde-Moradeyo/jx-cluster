@@ -404,16 +404,16 @@
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.30
+    appVersion: 0.0.32
     description: A Helm chart for Kubernetes
-    firstDeployed: "2022-04-03T18:58:01Z"
+    firstDeployed: "2022-04-03T19:09:11Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2022-04-03T18:58:01Z"
+    lastDeployed: "2022-04-03T19:09:11Z"
     name: election-web-app
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.35.178.110.181.nip.io
     resourcePath: config-root/namespaces/jx-staging/election-web-app
-    version: 0.0.30
+    version: 0.0.32
 - namespace: jx-production
   path: helmfiles/jx-production/helmfile.yaml
   releases:
