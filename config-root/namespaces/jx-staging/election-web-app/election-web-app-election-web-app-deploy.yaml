@@ -5,7 +5,7 @@ metadata:
   name: election-web-app-election-web-app
   labels:
     draft: draft-app
-    chart: "election-web-app-0.0.32"
+    chart: "election-web-app-0.0.33"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'election-web-app'
@@ -44,11 +44,11 @@ spec:
               name: init-sql
       containers:
         - name: election-web-app
-          image: "847399026905.dkr.ecr.eu-west-2.amazonaws.com/surreyfyp/election-web-app:0.0.32"
+          image: "847399026905.dkr.ecr.eu-west-2.amazonaws.com/surreyfyp/election-web-app:0.0.33"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.32
+              value: 0.0.33
             - name: DB_HOST
               value: "myteam-demodb"
             - name: DB_NAME
