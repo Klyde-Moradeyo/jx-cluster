@@ -9,7 +9,7 @@ repositories:
   url: http://chartmuseum-jx.35.178.110.181.nip.io
 releases:
 - chart: dev/election-web-app
-  version: 0.0.191
+  version: 0.0.192
   name: election-web-app
   values:
   - jx-values.yaml
