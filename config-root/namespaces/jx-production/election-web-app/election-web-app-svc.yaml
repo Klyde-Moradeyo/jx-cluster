@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: election-web-app
   labels:
-    chart: "election-web-app-0.0.218"
+    chart: "election-web-app-0.0.221"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'election-web-app'
